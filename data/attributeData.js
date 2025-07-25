@@ -1,0 +1,1 @@
+export const attributeData = ['Agility', 'Strength', 'Intelligence', 'Universal'];

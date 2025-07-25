@@ -1,0 +1,1 @@
+export const rolesData = ['Carry', 'Support', 'Nuker', 'Durable', 'Disabler', 'Initiator', 'Escape', 'Pusher'];

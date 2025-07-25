@@ -41,6 +41,7 @@ th {
   background-color: var(--ltGreen);
   font-size: 1.4rem;
   color: #fff;
+  text-transform: capitalize;
 }
 tr {
   border-top-left-radius: 10px;

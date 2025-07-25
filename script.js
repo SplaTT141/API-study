@@ -1,5 +1,6 @@
+import { main } from "./main.js";
+
 const heroesTableDOM = document.querySelector('tbody');
-const titleDOM = document.querySelector('h1');
 
 fetch('https://api.opendota.com/api/herostats')
     .then(res => res.json())
