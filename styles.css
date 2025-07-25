@@ -11,6 +11,7 @@ body * {
 
 body {
   font-family: "Trebuchet MS", sans-serif;
+  background-color: hsla(139, 82%, 63%, 0.155);
 }
 
 h1 {
@@ -19,13 +20,20 @@ h1 {
   margin: 3rem;
 }
 
-table {
+#heroes {
   width: 95%;
   margin: auto;
   text-align: center;
+}
+
+table {
+  width: 100%;
   border-collapse: collapse;
-  border-radius: 10px 10px 0 0;
-  overflow: hidden;
+}
+
+thead {
+  position: sticky;
+  top: 0;
 }
 
 th {
@@ -33,6 +41,19 @@ th {
   background-color: var(--ltGreen);
   font-size: 1.4rem;
   color: #fff;
+}
+tr {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+th:first-child {
+  border-top-left-radius: 10px;
+}
+
+th:last-child {
+  border-top-right-radius: 10px;
 }
 
 td {
@@ -46,10 +67,6 @@ th:first-child {
   text-align: start;
 }
 
-tr {
-  box-shadow: 0 2px 5px;
-}
-
 tr:nth-child(odd) {
   background-color: #fff;
 }
@@ -61,4 +78,39 @@ tr:nth-child(even) {
 tr:hover {
   color: var(--ltGreen);
   cursor: pointer;
+}
+
+/* sort styles */
+
+.sort {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sort div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sort label {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--ltGreen);
+}
+
+.sort select {
+  font-size: 1.3rem;
+  width: 15em;
+  height: 2em;
+  border-radius: 10px;
+  border-color: var(--ltGreen);
+}
+
+.sort option {
+  border-radius: 150px;
 }

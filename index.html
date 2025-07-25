@@ -9,29 +9,38 @@
   <body>
     <h1>Dota2 heroes</h1>
     <form class="sort">
-      <label for="attribute">Attribute</label>
-      <select name="attribute" id="attribute">
-        <option value="aglity">Aglity</option>
-        <option value="strength">Strength</option>
-        <option value="intelligence">Intelligence</option>
-        <option value="universal">Universal</option>
-      </select>
-      <label for="attackType">Attack type</label>
-      <select name="attackType" id="attackType">
-        <option value="melee">Melee</option>
-        <option value="ranged">Ranged</option>
-      </select>
-      <label for="role">Role</label>
-      <select name="role" id="role">
-        <option value="carry">Carry</option>
-        <option value="support">Support</option>
-        <option value="nuker">Nuker</option>
-        <option value="durable">Durable</option>
-        <option value="disabler">Disabler</option>
-        <option value="initiator">Initiator</option>
-        <option value="escape">Escape</option>
-        <option value="pusher">Pusher</option>
-      </select>
+      <div class="attribute">
+        <label for="attribute">Attribute</label>
+        <select name="attribute" id="attribute">
+          <option value="0">Select attribute</option>
+          <option value="aglity">Aglity</option>
+          <option value="strength">Strength</option>
+          <option value="intelligence">Intelligence</option>
+          <option value="universal">Universal</option>
+        </select>
+      </div>
+      <div class="attack-type">
+        <label for="attackType">Attack type</label>
+        <select name="attackType" id="attackType">
+          <option value="0">Select attack type</option>
+          <option value="melee">Melee</option>
+          <option value="ranged">Ranged</option>
+        </select>
+      </div>
+      <div class="role">
+        <label for="role">Role</label>
+        <select name="role" id="role">
+          <option value="0">Select role</option>
+          <option value="carry">Carry</option>
+          <option value="support">Support</option>
+          <option value="nuker">Nuker</option>
+          <option value="durable">Durable</option>
+          <option value="disabler">Disabler</option>
+          <option value="initiator">Initiator</option>
+          <option value="escape">Escape</option>
+          <option value="pusher">Pusher</option>
+        </select>
+      </div>
     </form>
     <div id="heroes">
       <table>
