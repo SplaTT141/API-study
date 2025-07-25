@@ -5,8 +5,6 @@ fetch('https://api.opendota.com/api/herostats')
     .then(res => res.json())
     .then(data => {
         data.forEach(data => {
-            console.log(data);
-            const name = data.localized_name;
             let attribute = data.primary_attr;
             let baseAttributePoints = '';
             const baseAttack = (data.base_attack_max + data.base_attack_min) / 2;
@@ -27,7 +25,7 @@ fetch('https://api.opendota.com/api/herostats')
 
             heroesTableDOM.insertAdjacentHTML('afterbegin',
                 `<tr>
-                    <td>${name}</td>
+                    <td>${data.localized_name}</td>
                     <td>${attribute}</td>
                     <td>${baseAttributePoints}</td>
                     <td>${baseAttack}</td>

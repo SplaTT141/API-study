@@ -107,10 +107,10 @@ tr:hover {
   font-size: 1.3rem;
   width: 15em;
   height: 2em;
-  border-radius: 10px;
+  border-radius: 10px 10px 5px 5px;
   border-color: var(--ltGreen);
 }
 
 .sort option {
-  border-radius: 150px;
+  border-radius: 15px;
 }
